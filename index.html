@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Food Delivery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">FoodDelivery</div>
+        <nav>
+            <a href="#menu-section">Menu</a>
+            <a href="#cart-section">Cart</a>
+            
+        </nav>
+        <!-- Login and Sign-Up buttons -->
+        <div class="auth-buttons">
+            <a href="#login-section" id="loginBtn">Login</a>
+            <a href="#sign-up-section" id="signUpBtn">Sign Up</a>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section id="menu-section" class="section-content">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+            <!-- Menu Item 1 -->
+            <div class="menu-item">
+                <img src="photos/burger.png" alt="Pizza" class="menu-item-img">
+                <h3>Pizza</h3>
+                <p class="item-description">Delicious cheese pizza with fresh toppings.</p>
+                <p class="price">$12.99</p>
+                <button class="add-to-cart" data-name="Pizza" data-price="12.99">Add to Cart</button>
+            </div>
+
+            <!-- Menu Item 2 -->
+            <div class="menu-item">
+                <img src="photos/burger.png" alt="Burger" class="menu-item-img">
+                <h3>Burger</h3>
+                <p class="item-description">Classic beef burger with lettuce and cheese.</p>
+                <p class="price">$8.99</p>
+                <button class="add-to-cart" data-name="Burger" data-price="8.99">Add to Cart</button>
+            </div>
+
+            <!-- Menu Item 3 -->
+            <div class="menu-item">
+                <img src="photos/pasta.jpeg" alt="Pasta" class="menu-item-img">
+                <h3>Pasta</h3>
+                <p class="item-description">Creamy pasta with garlic and herbs.</p>
+                <p class="price">$10.99</p>
+                <button class="add-to-cart" data-name="Pasta" data-price="10.99">Add to Cart</button>
+            </div>
+
+            <!-- Menu Item 4 -->
+            <div class="menu-item">
+                <img src="photos/sushi.jpeg" alt="Sushi" class="menu-item-img">
+                <h3>Sushi</h3>
+                <p class="item-description">Fresh and authentic sushi rolls.</p>
+                <p class="price">$15.99</p>
+                <button class="add-to-cart" data-name="Sushi" data-price="15.99">Add to Cart</button>
+            </div>
+
+            <!-- Menu Item 5 -->
+            <div class="menu-item">
+                <img src="photos/pexels-photo-806361.jpeg" alt="Salad" class="menu-item-img">
+                <h3>Salad</h3>
+                <p class="item-description">Healthy mix of greens and fresh vegetables.</p>
+                <p class="price">$7.99</p>
+                <button class="add-to-cart" data-name="Salad" data-price="7.99">Add to Cart</button>
+            </div>
+            
+            <!-- Menu Item 6 -->
+            <div class="menu-item">
+                <img src="photos/chocoloate.jpg" alt="Salad" class="menu-item-img">
+                <h3>Salad</h3>
+                <p class="item-description">Healthy to reduce stress and provides happines.</p>
+                <p class="price">$7.99</p>
+                <button class="add-to-cart" data-name="Salad" data-price="7.99">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart-section" class="section-content">
+        <h2>Your Cart</h2>
+        <div id="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div id="cart-total">
+            <p>Total: $<span id="total-price">0.00</span></p>
+            <button id="checkoutBtn">Checkout</button>
+        </div>
+    </section>
+
+    <!-- Login Section -->
+    <section id="login-section" class="section-content">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="loginEmail">Email</label>
+            <input type="email" id="loginEmail" required>
+
+            <label for="loginPassword">Password</label>
+            <input type="password" id="loginPassword" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <!-- Sign Up Section -->
+    <section id="sign-up-section" class="section-content">
+        <h2>Sign Up</h2>
+        <form id="signUpForm">
+            <label for="signUpEmail">Email</label>
+            <input type="email" id="signUpEmail" required>
+
+            <label for="signUpPassword">Password</label>
+            <input type="password" id="signUpPassword" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
